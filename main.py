@@ -14,7 +14,14 @@ def level0():
   
   opendoor = ("open the door")
   inopendoor = input("")
-
+  
+  haskey = False
+  
+  if openbox == inopenbox:
+    print("you open the box. Inside there is a key")
+    
+    getkey = ("get the key")
+  
 while Level_0:
   level0()
 

@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "Text-game"
-version = "0.2.0"
+name = "Text Adventure"
+version = "v0.1.0-alpha"
 description = "A small Text based game that I am working on."
-authors = ["Me, myself and I"]
+authors = ["Dragorn06"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

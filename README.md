@@ -4,6 +4,6 @@ a basic text based game that I am working on.
 [![Run on Repl.it](https://repl.it/badge/github/Dragorn06/text-adventure)](https://repl.it/github/Dragorn06/text-adventure)
 
 # repl.it
-when running on repl remeber to select the language as __'pyhton3__' and to run command as __'python main.py'__
+when running on repl remeber to select the language as __'python3__' and to run command as __'python main.py'__
 
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Text-Adventure"
-version = "v0.1.0-alpha"
+version = "v0.1.0-alpha.2"
 description = "A small Text based game that I am working on."
 authors = ["Dragorn06"]
 

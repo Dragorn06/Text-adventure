@@ -1,8 +1,6 @@
 #imports
 from random import randint
 
-from pygame import mixer
-
 import pickle, time, os, sys, pygame
 
 # yup this is colours

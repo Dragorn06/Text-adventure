@@ -322,8 +322,6 @@ if Level == 1.1:
 
 	scroll_inspect = ("inspect the scroll")
 
-	lever_pull = ("pull the lever")
-
 	check_number = ("check the pannel")
 
 	# stuff to do with the door mechanism
@@ -332,8 +330,6 @@ if Level == 1.1:
 	correct_number = randint(3, 45)
 
 	correct_number_print = str(correct_number)
-
-	pannel_showing = str(code_number)
 
 	# tell us that you dont have the scroll
 	has_sroll = False
@@ -345,43 +341,43 @@ if Level == 1.1:
 		# get the input and give the appropriate responce
 		if player_input == red_button:
 
-			print("you press the red button")
+			print("\nyou press the red button\n")
 
 			code_number = code_number + 1
 
 		if player_input == blue_button:
 
-			print("you press the blue button")
+			print("\nyou press the blue button\n")
 
 			code_number = code_number - 1
 
 		if player_input == green_button:
 
-			print("you press the green button")
+			print("\nyou press the green button\n")
 
 			code_number = code_number * 2
 
 		if player_input == yellow_button:
 
-			print("you press the yellow button")
+			print("\nyou press the yellow button\n")
 
 			code_number = code_number / 2
 
 		if player_input == scroll_pickup:
-			print("you pick the item up it is a srcoll")
+			print("\nyou pick the item up it is a srcoll\n")
 
 			has_scroll = True
 
 		if player_input == scroll_inspect:
 			if has_scroll == True:
-				print("you inspect the scroll")
+				print("\nyou inspect the scroll\n")
 
 				time.sleep(2)
 
-				print( "on it there is some text. It says 'the path unfolds with the number " + correct_number_print + "")
+				print( "on it there is some text. It says 'the path unfolds with the number " + correct_number_print + "\n")
 				
 		if player_input == check_number:
-		  print("The pannel shows the number " + pannel_showing + "")
+		  print("\nThe pannel shows the number " + str(code_number) + "\n")
       
 		if code_number == correct_number:
 			print("suddenly the door slams open with some force")

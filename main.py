@@ -1,6 +1,8 @@
 #imports
 from random import randint
 
+from pygame import mixer
+
 import pickle, time, os, sys, pygame
 
 # yup this is colours
@@ -193,11 +195,11 @@ if Level == 1:
   
   print(magenta, "LEVEL 2\n -------")
   
-  print(white, "\nyou are now in a tunnel")
+  print(white, "\nyou are now in a tunnel\n")
   
   time.sleep(2)
   
-  print(" the floor is covered in rocks. You see that the tunnel forks")
+  print(" the floor is covered in rocks. You see that the tunnel forks\n")
   
   time.sleep(3)
   
@@ -239,9 +241,9 @@ if Level == 1:
       
     elif player_input == wrong_tunnel:
       
-      print("you come to another turning ")
+      print("\nyou come to another turning")
       
-      print("left or right?")
+      print("left or right?\n")
       
       
       correcttunnel = randint(1, 2)
@@ -285,18 +287,18 @@ if Level == 1.1:
 	
 	time.sleep(2)
 	
-	print(white, "You walk down the tunnel and enter another room")
+	print(white, "You walk down the tunnel and enter another room\n")
 	
 	time.sleep(3)
 
 	print(
-	    "The room you are now in has a high vaulted ceiling and another large door at the end of the room"
+	    "The room you are now in has a high vaulted ceiling and another large door at the end of the room\n"
 	)
 
 	time.sleep(3)
 
 	print(
-	    "The door has no handle but you see that there are four coloured buttons in the walls: red, yellow, green and blue"
+	    "The door has no handle but you see that there are four coloured buttons in the walls: red, yellow, green and blue\n"
 	)
 
 	time.sleep(3)
@@ -305,7 +307,9 @@ if Level == 1.1:
 
 	time.sleep(10)
 
-	print("after a while you notice something in the corner ")
+	print("after a while you notice an object in the corner ")
+	
+	print("")
 
 	# all the actions
 	red_button = ("press the red button")
@@ -316,7 +320,7 @@ if Level == 1.1:
 
 	yellow_button = ("press the yellow button")
 
-	scroll_pickup = ("pickup the object")
+	scroll_pickup = ("get the object")
 
 	scroll_inspect = ("inspect the scroll")
 

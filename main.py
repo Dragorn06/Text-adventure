@@ -331,10 +331,11 @@ if Level == 1.1:
 
 	correct_number_print = str(correct_number)
 
-	# tell us that you dont have the scroll
+	# tell us that you don't have the scroll
 	has_sroll = False
 
 	while Level == 1.1:
+	  
 		# gets what the user types
 		player_input = input("")
 
@@ -388,8 +389,10 @@ if Level == 1.1:
 
 #second Level part 3
 if Level == 1.2:
-  print ("you walk through the door")
+  print ("you walk through the door\n")
   
+  Health = 10 
+
 quit()
 
   

@@ -1,7 +1,7 @@
 #imports
 from random import randint
 
-import pickle, time, os, sys, pygame
+import pickle, time, os, sys, pygame, fight_logic
 
 # yup this is colours
 red = "\033[0;31m"
@@ -281,7 +281,7 @@ if Level == 1.1:
 	#opening text
 	os.system('clear')
 	
-	print(magenta,"ROOM 2\n ------")
+	print(magenta,"\tROOM 2\n \t------")
 	
 	time.sleep(2)
 	
@@ -323,6 +323,9 @@ if Level == 1.1:
 	scroll_inspect = ("inspect the scroll")
 
 	check_number = ("check the pannel")
+	
+	if dev:
+	  complete = ("complete")
 
 	# stuff to do with the door mechanism
 	code_number = 0
@@ -386,6 +389,21 @@ if Level == 1.1:
 			Level = 1.2
 
 			pickle.dump(Level, open("Save.dat", "wb"))
+		
+		if dev:	
+		  if player_input == complete:
+		    
+		    skip_msg = ("skipping...")
+		    
+		    for char in skip_msg:
+		      sys.stdout.write(char)
+		      sys.stdout.flush()
+		      time.sleep(0.05) 
+		      
+		    Level = 1.2
+		    
+		    pickle.dump(Level, open("Save.dat", "wb"))
+		  
 
 #second Level part 3
 if Level == 1.2:
@@ -395,9 +413,7 @@ if Level == 1.2:
   
   print("Fight or die thats your choice")
   
-  player_health = 100
-  
   computer_health = 100
   
   while Level == 1.2:
-    print("1")
+    fight_logic.player_move()

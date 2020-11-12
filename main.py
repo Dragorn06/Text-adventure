@@ -34,18 +34,18 @@ if homescreen == True:
   
   os.system('clear')
   
-  print(red,"===============================")
+  print(red,"\t=================================")
   
   print(cyan, "")
   
-  hello_msg =("Welcome to [Generic Text game]!\n")
+  hello_msg =("\t Welcome to [Generic Text game]!\n")
   
   for char in hello_msg:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(0.05) 
     
-  print(red, "\n===============================\n")
+  print(red, "\n \t=================================\n")
   
   print(white, "To start a new game type new or to load a save type load\n")
   
@@ -99,7 +99,7 @@ if Level == 0:
 	
 	print(green, "")
 	
-	level1_msg = ("LEVEL 1\n-------")
+	level1_msg = ("\tLEVEL 1\n\t-------")
 	
 	for char in level1_msg:
 		  sys.stdout.write(char)
@@ -191,7 +191,7 @@ if Level == 1:
   
   os.system('clear')
   
-  print(magenta, "LEVEL 2\n -------")
+  print(magenta, "\tLEVEL 2\n \t -------")
   
   print(white, "\nyou are now in a tunnel\n")
   
@@ -391,8 +391,13 @@ if Level == 1.1:
 if Level == 1.2:
   print ("you walk through the door\n")
   
-  Health = 10 
-
-quit()
-
+  print("infront of you is a goblin!\n")
   
+  print("Fight or die thats your choice")
+  
+  player_health = 100
+  
+  computer_health = 100
+  
+  while Level == 1.2:
+    print("1")

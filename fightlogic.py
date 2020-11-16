@@ -1,4 +1,4 @@
-from random import randint
+# from random import randint
 
 import time, sys, pygame
 
@@ -36,14 +36,14 @@ def player_move():
 
 #	move_3_in = str(3)
 	
-	x = 1 
-	y = 2 
+#	x = 1 
+#	y = 2 
 	
-	damage = random.randint(x, y)
+#	damage = randint(x, y)
 	
-	player_health =(100)
+#	player_health =(100)
 	
-	palyer_defense = (1)
+#	player_defense = (1)
 
 	for char in move_1:
 		sys.stdout.write(char)

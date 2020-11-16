@@ -35,9 +35,9 @@ def player_move():
 #	move_2_in = str(2)
 
 #	move_3_in = str(3)
-	
-#	x = 1 
-#	y = 2 
+
+#	x = 1
+#	y = 2
 	
 #	damage = randint(x, y)
 	

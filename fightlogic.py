@@ -1,6 +1,6 @@
 from random import randint
 
-import time, os, sys, pygame
+import time, sys, pygame
 
 red = "\033[0;31m"
 green = "\033[0;32m"
@@ -35,8 +35,6 @@ def player_move():
 #	move_2_in = str(2)
 
 #	move_3_in = str(3)
-	
-	
 	
 	x = 1 
 	y = 2 

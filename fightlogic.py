@@ -40,7 +40,7 @@ def player_move():
 #	y = 2
 
 #	damage = randint(x, y)
-	
+
 #	player_health =(100)
 	
 #	player_defense = (1)

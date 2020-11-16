@@ -206,24 +206,6 @@ if Level == 1:
   complete = ("complete")
  
   correcttunnel = randint(1, 2)
-  
-  devnum = str(correcttunnel)
-  
-  correct_tunnel = int(correcttunnel)
-  
-  if correct_tunnel == 1:
-    
-    tunnel = ("left")
-    
-    wrong_tunnel = ("right")
-    
-  else:
-    tunnel = ("right")
-    
-    wrong_tunnel = ("left")
-    
-  if dev:
-    print("" + devnum + "")
     
   while Level == 1:
     
@@ -243,14 +225,7 @@ if Level == 1:
       
       print("left or right?\n")
       
-      
-      correcttunnel = randint(1, 2)
-      
-      devnum = str(correcttunnel)
-      
-      correct_tunnel = int(correcttunnel)
-      
-      if correct_tunnel == 1:
+      if int(correcttunnel) == 1:
         
         tunnel = ("left")
         
@@ -263,7 +238,7 @@ if Level == 1:
         wrong_tunnel = ("left")
         
       if dev:
-        print("" + devnum + "")
+        print("" + str(correcttunnel) + "")
         
       
       if dev:

@@ -416,4 +416,4 @@ if Level == 1.2:
   computer_health = 100
   
   while Level == 1.2:
-    fight_logic.player_move()
+    fight_logic.playermove()

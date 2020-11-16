@@ -206,6 +206,18 @@ if Level == 1:
   complete = ("complete")
  
   correcttunnel = randint(1, 2)
+  
+  if int(correcttunnel) == 1:
+        
+        tunnel = ("left")
+        
+        wrong_tunnel = ("right")
+        
+      else:
+        
+        tunnel = ("right")
+        
+        wrong_tunnel = ("left")
     
   while Level == 1:
     
@@ -224,18 +236,6 @@ if Level == 1:
       print("\nyou come to another turning")
       
       print("left or right?\n")
-      
-      if int(correcttunnel) == 1:
-        
-        tunnel = ("left")
-        
-        wrong_tunnel = ("right")
-        
-      else:
-        
-        tunnel = ("right")
-        
-        wrong_tunnel = ("left")
         
       if dev:
         print("" + str(correcttunnel) + "")

@@ -1,6 +1,6 @@
 from random import randint
 
-import pickle, time, os, sys, pygame
+import time, os, sys, pygame
 
 red = "\033[0;31m"
 green = "\033[0;32m"
@@ -30,16 +30,18 @@ def player_move():
 
 	move_3 = ("3)heal")
 
-	move_1_in = str(1)
+#	move_1_in = str(1)
 
-	move_2_in = str(2)
+#	move_2_in = str(2)
 
-	move_3_in = str(3)
+#	move_3_in = str(3)
 	
-	damage = randint(x, y)
+	
 	
 	x = 1 
 	y = 2 
+	
+	damage = random.randint(x, y)
 	
 	player_health =(100)
 	

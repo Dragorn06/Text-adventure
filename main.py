@@ -1,7 +1,7 @@
 #imports
 from random import randint
 
-import pickle, time, os, sys, pygame, fight_logic
+import pickle, time, os, sys, fight_logic
 
 # yup this is colours
 red = "\033[0;31m"
@@ -24,7 +24,7 @@ bright_white = "\033[0;97m"
 dev = False
 
 homescreen = True
- 
+
 firsttime = True
 
 #home screen (load or new save game)
@@ -43,7 +43,7 @@ if homescreen == True:
   for char in hello_msg:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(0.05) 
+    time.sleep(0.05)
     
   print(red, "\n \t=================================\n")
   
@@ -127,7 +127,7 @@ if Level == 0:
 
 	getkey = ("get the key")
 	
-	if dev: 
+	if dev:
 	  complete = ("complete")
 
 	while Level == 0:

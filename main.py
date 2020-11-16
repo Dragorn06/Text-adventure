@@ -29,7 +29,7 @@ firsttime = True
 
 #home screen (load or new save game)
 if homescreen == True:
-  
+
   time.sleep(4)
   
   os.system('clear')
@@ -44,7 +44,7 @@ if homescreen == True:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(0.05)
-    
+  
   print(red, "\n \t=================================\n")
   
   print(white, "To start a new game type new or to load a save type load\n")
@@ -74,7 +74,7 @@ if homescreen == True:
     if make_me_a_dev == user_input:
       
       if dev == False:
-       
+      
         dev = True
         
         print(blue, "\ndev mode on")

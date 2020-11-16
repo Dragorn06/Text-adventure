@@ -1,6 +1,6 @@
 # from random import randint
 
-import time, sys, pygame
+import time, sys
 
 red = "\033[0;31m"
 green = "\033[0;32m"
@@ -60,7 +60,7 @@ def player_move():
 		sys.stdout.flush()
 		time.sleep(0.05)
 
-	while move:
-		player_input = input("")
+	#while move:
+		#player_input = input("")
 		
 		

@@ -44,7 +44,7 @@ if homescreen == True:
     sys.stdout.write(char)
     sys.stdout.flush()
     time.sleep(0.05)
-  
+    
   print(red, "\n \t=================================\n")
   
   print(white, "To start a new game type new or to load a save type load\n")
@@ -178,7 +178,7 @@ if Level == 0:
 			else:
 				print("\nthe door is locked.")
 		
-		if dev:		
+		if dev:
 		  if complete == player_input:
 		    Level = 1
 		    

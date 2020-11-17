@@ -45,9 +45,9 @@ def player_move():
 	
 	#	player_health =(100)
 	
-	#	player_defense = (1)
-	
-	        for char in move_1:
+		#player_defense = (1)
+		
+		for char in move_1:
 			sys.stdout.write(char)
 			sys.stdout.flush()
 			time.sleep(0.05)

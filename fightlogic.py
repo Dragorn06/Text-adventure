@@ -18,6 +18,7 @@ bright_magenta = "\033[0;95m"
 bright_cyan = "\033[0;96m"
 bright_white = "\033[0;97m"
 
+enemy_block = False
 
 def player_move():
 
@@ -30,7 +31,7 @@ def player_move():
 
 	move_3 = ("3)heal")
 
-#	move_1_in = str(1)
+	move_1_in = str(1)
 
 #	move_2_in = str(2)
 
@@ -60,7 +61,9 @@ def player_move():
 		sys.stdout.flush()
 		time.sleep(0.05)
 
-	#while move:
-		#player_input = input("")
+	while move:
+		player_input = input("")
 		
+		if move_1_in == player_input:
+			if enemy_block
 		

@@ -20,50 +20,55 @@ bright_white = "\033[0;97m"
 
 enemy_block = False
 
+player_health = 50
+
+enemy_health = 50
+
 def player_move():
-
-	print("\nits your move. will you:\n")
-	print(bright_cyan, "")
-
-	move_1 = ("1) attack ")
-
-	move_2 = ("2) defend ")
-
-	move_3 = ("3)heal")
-
-	move_1_in = str(1)
-
-#	move_2_in = str(2)
-
-#	move_3_in = str(3)
-
-#	x = 1
-#	y = 2
-
-#	damage = randint(x, y)
-
-#	player_health =(100)
 	
-#	player_defense = (1)
-
-	for char in move_1:
-		sys.stdout.write(char)
-		sys.stdout.flush()
-		time.sleep(0.05)
-
-	for char in move_2:
-		sys.stdout.write(char)
-		sys.stdout.flush()
-		time.sleep(0.05)
-
-	for char in move_3:
-		sys.stdout.write(char)
-		sys.stdout.flush()
-		time.sleep(0.05)
-
-	while move:
-		player_input = input("")
+	if player_health <= 1:
+		print("\nits your move. will you:\n")
 		
-		if move_1_in == player_input:
-			if enemy_block
+		print(bright_cyan, "")
+		
+		move_1 = ("1) attack ")
+		
+		move_2 = ("2) defend ")
+		
+		move_3 = ("3)heal")
+		
+		move_1_in = str(1)
+		
+	#	move_2_in = str(2)
+	
+	#	move_3_in = str(3)
+	
+	#	player_health =(100)
+	
+	#	player_defense = (1)
+	
+	        for char in move_1:
+			sys.stdout.write(char)
+			sys.stdout.flush()
+			time.sleep(0.05)
+			
+		for char in move_2:
+			sys.stdout.write(char)
+			sys.stdout.flush()
+			time.sleep(0.05)
+			
+		for char in move_3:
+			sys.stdout.write(char)
+			sys.stdout.flush()
+			time.sleep(0.05)
+			
+		while move:
+			player_input = input("")
+			
+			if move_1_in == player_input:
+				damage = randint(1, 5) 
+			
+			if enemy_block:
+				damage = randint(1, 5)/2
+				
 		

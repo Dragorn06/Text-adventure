@@ -66,7 +66,7 @@ def player_move():
 			player_input = input("")
 			
 			if move_1_in == player_input:
-				damage = randint(1, 5) 
+				damage = randint(1, 5)
 			
 			if enemy_block:
 				damage = randint(1, 5)/2

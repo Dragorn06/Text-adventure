@@ -70,9 +70,9 @@ def player_move():
 			if move_1_in == player_input:
 				player_damage = randint(1, 5)
 				
-				enemy_health = enemy_health - damage
+				enemy_health = enemy_health - player_damage
 				
-				print("you attack dealing" + damage +" damage")
+				print("you attack dealing" + player_damage +" damage")
 				
 				print("[Enemy] now has" + enemy_health + "")
 				
@@ -81,9 +81,9 @@ def player_move():
 			if enemy_block:
 				player_damage = randint(1, 5)/2
 				
-				enemy_health = enemy_health - damage
+				enemy_health = enemy_health - player_damage
 				
-				print("you attack dealing" + damage +" damage")
+				print("you attack dealing" + player_damage +" damage")
 				
 				print("[Enemy] now has" + enemy_health + "")
 				

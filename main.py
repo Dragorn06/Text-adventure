@@ -1,7 +1,7 @@
 #imports
 from random import randint
 
-import pickle, time, os, sys, fight_logic
+import pickle, time, os, sys, fightlogic
 
 # yup this is colours
 red = "\033[0;31m"

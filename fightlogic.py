@@ -81,16 +81,14 @@ def player_move():
 				print("[Enemy] now has" + enemy_health + "")
 				
 				p_move = False
-
-			if enemy_block:
-				player_damage = randint(1, 5)/2
 				
-				enemy_health = enemy_health - player_damage
-				
-				print("you attack dealing" + player_damage +" damage")
-				
-				print("[Enemy] now has" + enemy_health + "")
-				
-				p_move = False
-				
-
+				if enemy_block:
+				  player_damage = randint(1, 5)/2
+				  
+				  enemy_health = enemy_health - player_damage
+				  
+				  print("you attack dealing" + player_damage +" damage")
+				  
+				  print("[Enemy] now has" + enemy_health + "")
+				  
+				  p_move = False

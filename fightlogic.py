@@ -24,7 +24,7 @@ player_health = 50
 
 enemy_health = 50
 
-p_move = True 
+
 
 def player_move():
 	
@@ -48,6 +48,8 @@ def player_move():
 	#	player_health =(100)
 	
 		#player_defense = (1)
+		
+		p_move = True
 		
 		for char in move_1:
 			sys.stdout.write(char)

@@ -42,7 +42,7 @@ def player_move():
 		move_1_in = str(1)
 		
 	#	move_2_in = str(2)
-	
+
 	#	move_3_in = str(3)
 	
 	#	player_health =(100)

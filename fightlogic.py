@@ -1,4 +1,4 @@
-# from random import randint
+from random import randint
 
 import time, sys
 
@@ -23,6 +23,8 @@ enemy_block = False
 player_health = 50
 
 enemy_health = 50
+
+move = True 
 
 def player_move():
 	
@@ -66,9 +68,25 @@ def player_move():
 			player_input = input("")
 			
 			if move_1_in == player_input:
-				damage = randint(1, 5)
-			
-			if enemy_block:
-				damage = randint(1, 5)/2
+				player_damage = randint(1, 5)
 				
-		
+				enemy_health = enemy_health - damage
+				
+				print("you attack dealing" + damage +" damage")
+				
+				print("[Enemy] now has" + enemy_health + "")
+				
+				move = False
+
+			if enemy_block:
+				player_damage = randint(1, 5)/2
+				
+				enemy_health = enemy_health - damage
+				
+				print("you attack dealing" + damage +" damage")
+				
+				print("[Enemy] now has" + enemy_health + "")
+				
+				move = False
+				
+

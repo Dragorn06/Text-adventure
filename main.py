@@ -31,7 +31,7 @@ firsttime = True
 if homescreen == True:
 
   time.sleep(4)
-  
+
   os.system('clear')
   
   print(red,"\t=================================")
@@ -104,7 +104,7 @@ if Level == 0:
 	for char in level1_msg:
 		  sys.stdout.write(char)
 		  sys.stdout.flush()
-		  time.sleep(0.05) 
+		  time.sleep(0.05)
 	
 	time.sleep(2)
 	
@@ -365,9 +365,9 @@ if Level == 1.1:
 
 			pickle.dump(Level, open("Save.dat", "wb"))
 		
-		if dev:	
+		if dev:
 		  if player_input == complete:
-		    
+	
 		    skip_msg = ("skipping...")
 		    
 		    for char in skip_msg:

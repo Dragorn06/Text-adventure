@@ -213,11 +213,11 @@ if Level == 1:
         
         wrong_tunnel = ("right")
         
-      else:
-        
-        tunnel = ("right")
-        
-        wrong_tunnel = ("left")
+  else:
+    
+    tunnel = ("right")
+    
+    wrong_tunnel = ("left")
     
   while Level == 1:
     

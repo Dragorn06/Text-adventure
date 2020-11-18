@@ -51,6 +51,8 @@ def player_move():
 		
 		p_move = True
 		
+		enemy_health = 50
+		
 		for char in move_1:
 			sys.stdout.write(char)
 			sys.stdout.flush()

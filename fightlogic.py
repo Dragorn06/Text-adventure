@@ -24,7 +24,7 @@ player_health = 50
 
 enemy_health = 50
 
-move = True 
+p_move = True 
 
 def player_move():
 	
@@ -64,7 +64,7 @@ def player_move():
 			sys.stdout.flush()
 			time.sleep(0.05)
 			
-		while move:
+		while p_move:
 			player_input = input("")
 			
 			if move_1_in == player_input:
@@ -76,7 +76,7 @@ def player_move():
 				
 				print("[Enemy] now has" + enemy_health + "")
 				
-				move = False
+				p_move = False
 
 			if enemy_block:
 				player_damage = randint(1, 5)/2
@@ -87,6 +87,6 @@ def player_move():
 				
 				print("[Enemy] now has" + enemy_health + "")
 				
-				move = False
+				p_move = False
 				
 

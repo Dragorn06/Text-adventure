@@ -30,17 +30,17 @@ def player_move():
 
 	if player_health <= 1:
 		print("\nits your move. will you:\n")
-		
+	
 		print(bright_cyan, "")
-		
+	
 		move_1 = ("1) attack ")
-		
+	
 		move_2 = ("2) defend ")
-		
+	
 		move_3 = ("3)heal")
-		
+	
 		move_1_in = str(1)
-		
+	
 	#	move_2_in = str(2)
 
 	#	move_3_in = str(3)

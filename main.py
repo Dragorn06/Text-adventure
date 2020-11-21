@@ -33,7 +33,7 @@ if homescreen == True:
   time.sleep(4)
 
   os.system('clear')
-  
+
   print(red,"\t=================================")
   
   print(cyan, "")
@@ -373,7 +373,7 @@ if Level == 1.1:
 		    for char in skip_msg:
 		      sys.stdout.write(char)
 		      sys.stdout.flush()
-		      time.sleep(0.05) 
+		      time.sleep(0.05)
 		      
 		    Level = 1.2
 		    

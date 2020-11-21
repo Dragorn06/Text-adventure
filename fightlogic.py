@@ -27,7 +27,7 @@ enemy_health = 50
 
 
 def player_move():
-	
+
 	if player_health <= 1:
 		print("\nits your move. will you:\n")
 		

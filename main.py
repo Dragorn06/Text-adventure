@@ -1,7 +1,9 @@
 #imports
 from random import randint
 
-import pickle, time, os, sys, fightlogic
+import pickle, time, os, sys
+
+import fightlogic as fl
 
 # yup this is colours
 red = "\033[0;31m"
@@ -391,4 +393,4 @@ if Level == 1.2:
   computer_health = 100
   
   while Level == 1.2:
-    fightlogic.playermove()
+    fl.playermove()
